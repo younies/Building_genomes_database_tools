@@ -44,8 +44,8 @@ Gi_Uid::Gi_Uid(string path_to_giuid_file)
 LONGS Gi_Uid::getTheUId(LONGS gi)
 {
     LONGS uid = -1;
-    if(binary_search(this->gi_uid_map.begin(), this->gi_uid_map.end(), gi))
-        return -2;
+    //if(binary_search(this->gi_uid_map.begin(), this->gi_uid_map.end(), gi))
+      //  return -2;
     
     
     
@@ -75,7 +75,7 @@ LONGS Gi_Uid::getTheUId(LONGS gi)
 
 
 
-LONGS getGiFromFile(string path_to_file)
+LONGS Gi_Uid::getGiFromFile(string path_to_file)
 {
     ifstream file_to_file(path_to_file);
     if(! file_to_file.good())

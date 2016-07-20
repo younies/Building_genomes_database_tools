@@ -12,7 +12,7 @@
 #include "headers.h"
 
 class Gi_Uid {
-    vector <pair<LONGS, LONGS> > gi_uid_map;
+    vector < pair<LONGS, LONGS> > gi_uid_map;
     string path_to_gi_uid_file;
 
 public:

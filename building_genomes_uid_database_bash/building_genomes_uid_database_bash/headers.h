@@ -60,15 +60,6 @@ typedef unsigned long LONG;
 typedef long LONGS;
 
 
-struct Node {
-    LONG uid;
-    LONG parentUID;
-    LONGS parentIndex;
-    LONGS myselfIndex;
-    vector<LONG> children;
-};
-
-
 
 
 
