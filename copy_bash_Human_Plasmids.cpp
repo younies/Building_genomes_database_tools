@@ -50,6 +50,8 @@
 
 using namespace std;
 
+typedef long LONGS;
+
 vector<pair<int, int> > giIdMapper;
 
 int mapsize = 562270495;
@@ -80,7 +82,7 @@ int main(int argc, const char * argv[]) {
     
     build_the_mapper(file_path_gi, mapsize);
     
-    ofstream output_bash(path_to_bash);
+    ofstream output_bash(path_to_bash , ios::app);
     output_bash << "#!/bin/bash \n\n";
     
     
