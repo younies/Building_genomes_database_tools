@@ -10,7 +10,9 @@ import re
 
 ##some configuration variables:
 
-path_to_the_program = "/export/project/hondius/newProject/"
+
+
+path_to_the_program = "/export1/project/hondius/newKrakenResearch/"
 path_to_the_place_of_the_database = "/export1/project/hondius/newKrakenResearch/databases/"
 name_of_genomes_database = "genomesDatabase"
 path_for_converting_yjr = "/export/project/hondius/newProject/NewTaxonomer/convert_kmerFasta_to_yrj.out"
