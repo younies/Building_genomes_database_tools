@@ -21,10 +21,28 @@ int main(int argc, const char * argv[]) {
     
     string path;
     
+    ofstream output_bash(path_to_bash_file);
+    
+    output_bash << "#!/bin/bash \n\n";
+    
+    
+
+    
     while (getline(file_to_names, path))
     {
-        cout << gi_uid.getGiFromFile(path) << endl;
+        LONGS uid =  gi_uid.getGiFromFile(path) ;
+        if(uid < 0 )
+        {
+            cout << "there are problem with file: " + path << endl;
+        }
+        else
+        {
+            output_bash << "cat  " << path << "  >>  " << genomesDatabases << uid << ".fa" << endl;
+        }
     }
+    
+    output_bash.flush();
+    output_bash.close();
     
     return 0;
 }
