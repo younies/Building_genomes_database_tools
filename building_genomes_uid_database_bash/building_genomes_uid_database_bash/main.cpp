@@ -36,7 +36,7 @@ int main(int argc, const char * argv[]) {
         
         if(uid < 0 )
         {
-            cout << "there are problem with file: " + path << endl;
+            cout << "there are problem with file: " + path  << "  associated with Gi: "<< gi <<  endl;
         }
         else
         {
