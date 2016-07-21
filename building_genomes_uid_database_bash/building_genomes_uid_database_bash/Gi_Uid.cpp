@@ -33,6 +33,8 @@ Gi_Uid::Gi_Uid(string path_to_giuid_file)
         this->gi_uid_map.push_back(make_pair(gi, uid));
     }
     
+    sort(gi_uid_map.begin(), gi_uid_map.end());
+    
     file_to_giUID.close();
     
 }
