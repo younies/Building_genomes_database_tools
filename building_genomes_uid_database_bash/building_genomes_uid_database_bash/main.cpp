@@ -30,7 +30,10 @@ int main(int argc, const char * argv[]) {
     
     while (getline(file_to_names, path))
     {
-        LONGS uid =  gi_uid.getGiFromFile(path) ;
+        LONGS gi =  gi_uid.getGiFromFile(path) ;
+        
+        LONGS uid = gi_uid.getTheUId(gi);
+        
         if(uid < 0 )
         {
             cout << "there are problem with file: " + path << endl;
